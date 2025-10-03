@@ -1,16 +1,3 @@
----
-title: Twitter Sentiment Analysis with PyTorch
-emoji: 💬
-colorFrom: purple
-colorTo: pink
-sdk: gradio
-sdk_version: 5.17.1
-app_file: app.py
-pinned: false
-license: mit
-short_description: Real-Time Sentiment Analysis on Airline Tweets using LSTM in PyTorch
----
-
 ## 🚀 **Overview**
 
 This project performs **real-time sentiment analysis** on airline-related tweets using a custom-built **LSTM model** in **PyTorch**. It classifies tweets as **positive** or **negative**, completely excluding neutral sentiments for a more opinion-focused analysis.
