@@ -13,8 +13,8 @@ This project implements a deep learning model to classify movie reviews as posit
 ---
 > ScreenShot 2 of positive sentiment - 
 <img width="1236" height="395" alt="image" src="https://github.com/user-attachments/assets/c4cc8297-8b22-4809-87ee-88debece8823" />
----
 
+---
 > ScreenSHot 3 of a generalized/neutral statement -
 <img width="1235" height="396" alt="image" src="https://github.com/user-attachments/assets/bf93d56d-9b1f-4a9d-96f5-f11935c35b19" />
 
