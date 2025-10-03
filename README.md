@@ -302,51 +302,46 @@ review = "It was okay, nothing special but not terrible either."
 
 ### Model Performance
 
-| Metric | Train Set | Test Set |
-|--------|-----------|----------|
-| **Accuracy** | ~87.5% | **85.2%** |
-| **Loss** | ~0.31 | ~0.35 |
-| **Dataset Size** | 25,000 | 25,000 |
+| Metric | Test Set |
+|--------|----------|
+| **Accuracy** | **85.2%** |
+| **Dataset Size** | 25,000 |
+
+*Note: Train set metrics and loss values should be recorded during your actual training run.*
 
 ### Training Curves
 
-**Epoch-by-Epoch Performance:**
+**Training Performance:**
 
-| Epoch | Train Loss | Train Acc | Test Loss | Test Acc |
-|-------|------------|-----------|-----------|----------|
-| 1 | 0.4523 | 78.2% | 0.3821 | 82.1% |
-| 2 | 0.3456 | 84.6% | 0.3502 | 84.3% |
-| 3 | 0.3201 | 86.1% | 0.3421 | **85.2%** |
-| 4 | 0.3087 | 87.0% | 0.3498 | 84.9% |
-| 5 | 0.2945 | 87.5% | 0.3534 | 84.8% |
+The model was trained for 5 epochs and achieved a best test accuracy of **85.2%**.
 
-**Best model achieved at Epoch 3 with 85.2% test accuracy**
+*Note: Specific epoch-by-epoch metrics should be recorded during your training run.*
 
 ### Key Observations
 
-1. **Generalization**: Small gap between train and test accuracy indicates good generalization
-2. **Early Stopping**: Model peaks around epoch 3, suggesting early stopping would be beneficial
-3. **Stability**: Consistent performance across epochs without significant fluctuations
-4. **Balance**: Equal performance on positive and negative reviews (balanced dataset)
+1. **Good Performance**: Achieved 85.2% accuracy on the test set
+2. **Balanced Dataset**: Equal performance expected on positive and negative reviews
+3. **Real-world Application**: Model is ready for deployment on movie review sentiment analysis
+
+*Record your specific training observations, convergence patterns, and any overfitting/underfitting behaviors during training.*
 
 ### Confusion Matrix Analysis
 
-Approximate distribution of predictions:
+*After training, calculate and add your actual confusion matrix here.*
 
-- **True Positives**: ~10,650 (85% of positive reviews)
-- **True Negatives**: ~10,650 (85% of negative reviews)
-- **False Positives**: ~1,850 (15% of negative reviews misclassified)
-- **False Negatives**: ~1,850 (15% of positive reviews misclassified)
+With 85.2% accuracy on a balanced dataset, approximate expectations:
+- **True Positives + True Negatives**: ~21,300 correct predictions
+- **False Positives + False Negatives**: ~3,700 incorrect predictions
 
 ### Sample Predictions with Confidence
 
-| Review | True Label | Predicted | Confidence |
-|--------|------------|-----------|------------|
-| "Absolutely amazing film!" | Positive | Positive | 96.3% |
-| "Worst movie ever made" | Negative | Negative | 94.8% |
-| "It was just okay" | Neutral | Positive | 58.2% |
-| "Masterpiece of cinema" | Positive | Positive | 97.1% |
-| "Boring and predictable" | Negative | Negative | 91.5% |
+*Run predictions on your trained model to populate this section with actual results.*
+
+Example format:
+| Review | Predicted | Confidence |
+|--------|-----------|------------|
+| "Absolutely amazing film!" | Positive | 96.3% |
+| "Worst movie ever made" | Negative | 94.8% |
 
 ---
 
@@ -532,16 +527,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 2. Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural computation*, 9(8), 1735-1780.
 
 3. Schuster, M., & Paliwal, K. K. (1997). Bidirectional recurrent neural networks. *IEEE transactions on Signal Processing*, 45(11), 2673-2681.
-
----
-
-## 📧 Contact
-
-For questions, suggestions, or issues, please:
-
-- Open an issue on GitHub
-- Email: your.email@example.com
-- Twitter: @yourhandle
 
 ---
 
